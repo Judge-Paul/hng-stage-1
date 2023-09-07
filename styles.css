@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 350px;
+    padding: 45px;
+    text-align: center;
+}
+
+.card img {
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    
+}
+
+.info-text {
+    font-size: larger;
+}
+
+.info-text p {
+    margin: 10px 0;
+    font-weight: bolder;
+}
+
+.info-text span {
+    margin: 5px 0;
+}
+
+.date-time {
+    font-weight: 600;
+}
+
+.github {
+    margin-top: 30px;
+}
+
+.github a {
+    background-color: black;
+    padding: 12px 44px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.github a:hover {
+    background-color: rgb(20, 20, 20);
+}
