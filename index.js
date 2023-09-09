@@ -10,14 +10,13 @@ function updateClock() {
     const timeElement = document.querySelector('[data-testid="currentUTCTime"]');
     const updateClockDisplay = () => {
         const currentDate = new Date();
-        const options = { hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
-        const formattedTime = currentDate.toLocaleTimeString(undefined, options);
-        timeElement.textContent = formattedTime;
+        const milliseconds = currentDate.getMilliseconds();
+        timeElement.textContent = milliseconds.toString();
     };
 
     updateClockDisplay();
 
-    setInterval(updateClockDisplay, 1000);
+    setInterval(updateClockDisplay, 1);
 }
 
 setDayOfWeek();
