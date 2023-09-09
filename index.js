@@ -9,9 +9,8 @@ function setDayOfWeek() {
 function updateClock() {
     const timeElement = document.querySelector('[data-testid="currentUTCTime"]');
     const updateClockDisplay = () => {
-        const currentDate = new Date();
-        const milliseconds = currentDate.getMilliseconds();
-        timeElement.textContent = milliseconds.toString();
+        const currentTimeMillis = new Date().getTime(); // Get the current time in milliseconds (Unix time)
+        timeElement.textContent = currentTimeMillis.toString();
     };
 
     updateClockDisplay();
